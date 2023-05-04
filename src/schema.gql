@@ -1,0 +1,13 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  findAll: [Todo]!
+}
+
+type Todo {
+  id: ID!
+  name: String!
+  userId: String!
+}
