@@ -1,0 +1,5 @@
+query getTodosName {
+  todos {
+    name
+  }
+}

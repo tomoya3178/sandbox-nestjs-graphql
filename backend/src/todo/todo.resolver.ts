@@ -4,9 +4,9 @@ import { TodoService } from './todo.service';
 
 @Resolver((of) => Todo)
 export class TodoResolver {
-  constructor(private todoService: TodoService) {}
+  constructor(private service: TodoService) {}
   @Query(() => [Todo], { nullable: 'items' })
-  findAll() {
-    return this.todoService.findAll();
+  todos() {
+    return this.service.findAll();
   }
 }
